@@ -1,0 +1,1329 @@
+.ingredients {
+  padding-top: 80px;
+  width: 100%;
+  height: auto;
+
+  margin: 0 auto;
+  &__inner {
+    max-width: 1280px;
+    height: 100%;
+
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+  }
+  .ingredient {
+    width: 65.6%;
+
+    &__mainTitle {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: -0.04em;
+      margin-bottom: 48px;
+    }
+    &__content {
+      width: 100%;
+      margin-bottom: 64px;
+      &-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.04em;
+        margin-bottom: 32px;
+      }
+      &-optionCont {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .optionIngredient {
+          display: flex;
+          gap: 24px;
+          align-items: center;
+          padding-bottom: 32px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          &__iconCont {
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #dbe2e5;
+
+            font-size: 10px;
+          }
+          &__name {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: -0.02em;
+          }
+          .activeIngredient {
+            background-color: #000;
+            &__icon {
+              color: white;
+            }
+          }
+
+          .activeText {
+            text-decoration-line: line-through;
+            color: rgba(0, 0, 0, 0.6);
+            opacity: 0.2;
+          }
+        }
+      }
+    }
+    &__specialContent {
+      width: 100%;
+      padding-top: 13px;
+      &-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.04em;
+        margin-bottom: 35px;
+      }
+      &-optionCont {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .optionIngredient {
+          display: flex;
+          gap: 24px;
+          padding-bottom: 32px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          &__iconCont {
+            margin-top: 3px;
+            height: 24px;
+            min-width: 24px;
+            border-radius: 100%;
+            border: 2px solid #dbe2e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &__content {
+            cursor: pointer;
+            width: 100%;
+            &-mainTitle {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+              letter-spacing: -0.02em;
+              margin-bottom: 24px;
+            }
+            &-text {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 26px;
+              letter-spacing: -0.02em;
+              color: rgba(0, 0, 0, 0.6);
+            }
+            &-imgCont {
+              border-radius: 20px;
+              width: 100%;
+              margin: 46px 0px;
+              &-img {
+                height: 100%;
+                width: 100%;
+              }
+            }
+          }
+          .activeIngredient {
+            background-color: #000;
+            &__icon {
+              color: white;
+            }
+          }
+
+          .activeText {
+            text-decoration-line: line-through;
+            color: rgba(0, 0, 0, 0.6);
+            opacity: 0.2;
+          }
+        }
+      }
+    }
+  }
+  .suggestRecipeCont {
+    height: auto;
+    width: 400px;
+
+    .otherRecipe {
+      width: 100%;
+      margin-bottom: 80px;
+      &__mainTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: -0.04em;
+        margin-bottom: 32px;
+      }
+      &__contentCont {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        .suggestRecipe {
+          display: flex;
+          height: 120px;
+          align-items: center;
+          gap: 24px;
+          &__imgCont {
+            height: 100%;
+            width: 180px;
+            &-img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+          &__titleCont {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 196px;
+            &-mainTitle {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 1.2;
+              letter-spacing: -0.04em;
+              transition: all 0.2s linear;
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+            &-subTitle {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 17px;
+              letter-spacing: -0.02em;
+              color: rgba(0, 0, 0, 0.6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .ingredients {
+    padding-top: 80px;
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+    &__inner {
+      max-width: 100%;
+      height: 100%;
+
+      margin: 0 auto;
+      display: flex;
+      gap: 40px;
+    }
+    .ingredient {
+      width: 65.6%;
+
+      &__mainTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.04em;
+        margin-bottom: 48px;
+      }
+      &__content {
+        width: 100%;
+        margin-bottom: 64px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+          letter-spacing: -0.04em;
+          margin-bottom: 32px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              width: 24px;
+              height: 24px;
+              border-radius: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 2px solid #dbe2e5;
+
+              font-size: 10px;
+            }
+            &__name {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 22px;
+              letter-spacing: -0.02em;
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+      &__specialContent {
+        width: 100%;
+        padding-top: 13px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 44px;
+          letter-spacing: -0.04em;
+          margin-bottom: 35px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              margin-top: 3px;
+              height: 24px;
+              min-width: 24px;
+              border-radius: 100%;
+              border: 2px solid #dbe2e5;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            &__content {
+              width: 100%;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: -0.02em;
+                margin-bottom: 24px;
+              }
+              &-text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+              &-imgCont {
+                border-radius: 20px;
+                width: 100%;
+                margin: 46px 0px;
+                &-img {
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+    }
+    .suggestRecipeCont {
+      height: auto;
+      width: 400px;
+
+      .otherRecipe {
+        width: 100%;
+        margin-bottom: 80px;
+        &__mainTitle {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 39px;
+          letter-spacing: -0.04em;
+          margin-bottom: 32px;
+        }
+        &__contentCont {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          width: 100%;
+          .suggestRecipe {
+            display: flex;
+            height: 120px;
+            align-items: center;
+            gap: 24px;
+            &__imgCont {
+              height: 100%;
+              width: 180px;
+              &-img {
+                height: 100%;
+                width: 100%;
+              }
+            }
+            &__titleCont {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              width: 196px;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+
+                letter-spacing: -0.04em;
+              }
+              &-subTitle {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ingredients {
+    padding-top: 80px;
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+    &__inner {
+      max-width: 100%;
+      height: 100%;
+
+      margin: 0 auto;
+      display: flex;
+      gap: 40px;
+    }
+    .ingredient {
+      width: 65.6%;
+
+      &__mainTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        margin-bottom: 40px;
+      }
+      &__content {
+        width: 100%;
+        margin-bottom: 64px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 27px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              width: 16px;
+              height: 16px;
+              border-radius: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 2px solid #dbe2e5;
+
+              font-size: 10px;
+            }
+            &__name {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.1;
+              letter-spacing: -0.02em;
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+      &__specialContent {
+        width: 100%;
+        padding-top: 13px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 35px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              height: 16px;
+              min-width: 16px;
+              border-radius: 100%;
+              border: 2px solid #dbe2e5;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            &__content {
+              width: 100%;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                margin-bottom: 24px;
+              }
+              &-text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+              &-imgCont {
+                border-radius: 20px;
+                width: 100%;
+                margin: 46px 0px;
+                &-img {
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+    }
+    .suggestRecipeCont {
+      height: auto;
+      width: 300px;
+
+      .otherRecipe {
+        width: 100%;
+        margin-bottom: 80px;
+        &__mainTitle {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 32px;
+        }
+        &__contentCont {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          width: 100%;
+          .suggestRecipe {
+            display: flex;
+            height: 100px;
+            align-items: center;
+            gap: 24px;
+            &__imgCont {
+              height: 100%;
+              width: 150px;
+              &-img {
+                height: 100%;
+                width: 100%;
+              }
+            }
+            &__titleCont {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              width: 196px;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.2;
+
+                letter-spacing: -0.04em;
+              }
+              &-subTitle {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+            }
+          }
+        }
+      }
+      &__suggestBanner {
+        width: 100%;
+        &-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ingredients {
+    padding-top: 80px;
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+    &__inner {
+      max-width: 100%;
+      height: 100%;
+
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .ingredient {
+      width: 100%;
+
+      &__mainTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        margin-bottom: 40px;
+      }
+      &__content {
+        width: 100%;
+        margin-bottom: 64px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 27px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              width: 16px;
+              height: 16px;
+              border-radius: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 2px solid #dbe2e5;
+
+              font-size: 10px;
+            }
+            &__name {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.1;
+              letter-spacing: -0.02em;
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+      &__specialContent {
+        width: 100%;
+        padding-top: 13px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 35px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              height: 16px;
+              min-width: 16px;
+              border-radius: 100%;
+              border: 2px solid #dbe2e5;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            &__content {
+              width: 100%;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                margin-bottom: 24px;
+              }
+              &-text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+              &-imgCont {
+                border-radius: 20px;
+                width: 100%;
+                margin: 46px 0px;
+                &-img {
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+    }
+    .suggestRecipeCont {
+      height: auto;
+      width: 100%;
+
+      .otherRecipe {
+        width: 100%;
+        margin-bottom: 80px;
+
+        &__mainTitle {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 32px;
+        }
+        &__contentCont {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 50px;
+          width: 100%;
+          .suggestRecipe {
+            width: 45%;
+            display: flex;
+            height: 80px;
+            align-items: center;
+            gap: 24px;
+
+            &__imgCont {
+              height: 100%;
+              min-width: 100px;
+              &-img {
+                height: 100%;
+                width: 100%;
+              }
+            }
+            &__titleCont {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              width: 196px;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.2;
+
+                letter-spacing: -0.04em;
+              }
+              &-subTitle {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+            }
+          }
+        }
+      }
+      &__suggestBanner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ingredients {
+    padding-top: 80px;
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+    &__inner {
+      max-width: 100%;
+      height: 100%;
+
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .ingredient {
+      width: 100%;
+
+      &__mainTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        margin-bottom: 40px;
+      }
+      &__content {
+        width: 100%;
+        margin-bottom: 64px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 27px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              width: 16px;
+              height: 16px;
+              border-radius: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 2px solid #dbe2e5;
+
+              font-size: 10px;
+            }
+            &__name {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.1;
+              letter-spacing: -0.02em;
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+      &__specialContent {
+        width: 100%;
+        padding-top: 13px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 35px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              height: 16px;
+              min-width: 16px;
+              border-radius: 100%;
+              border: 2px solid #dbe2e5;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            &__content {
+              width: 100%;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                margin-bottom: 24px;
+              }
+              &-text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+              &-imgCont {
+                border-radius: 20px;
+                width: 100%;
+                margin: 46px 0px;
+                &-img {
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+    }
+    .suggestRecipeCont {
+      height: auto;
+      width: 100%;
+
+      .otherRecipe {
+        width: 100%;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__mainTitle {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 32px;
+        }
+        &__contentCont {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 50px;
+          width: 100%;
+          .suggestRecipe {
+            width: 100%;
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            &__imgCont {
+              height: 100%;
+              min-width: 100px;
+              &-img {
+                height: 100%;
+                width: 100%;
+              }
+            }
+            &__titleCont {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              width: 196px;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.2;
+
+                letter-spacing: -0.04em;
+              }
+              &-subTitle {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+            }
+          }
+        }
+      }
+      &__suggestBanner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ingredients {
+    padding-top: 80px;
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+    &__inner {
+      max-width: 100%;
+      height: 100%;
+
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .ingredient {
+      width: 100%;
+
+      &__mainTitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        margin-bottom: 40px;
+      }
+      &__content {
+        width: 100%;
+        margin-bottom: 64px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 27px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              width: 16px;
+              height: 16px;
+              border-radius: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 2px solid #dbe2e5;
+
+              font-size: 10px;
+            }
+            &__name {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.1;
+              letter-spacing: -0.02em;
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+      &__specialContent {
+        width: 100%;
+        padding-top: 13px;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 35px;
+        }
+        &-optionCont {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .optionIngredient {
+            display: flex;
+            gap: 24px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &__iconCont {
+              height: 16px;
+              min-width: 16px;
+              border-radius: 100%;
+              border: 2px solid #dbe2e5;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            &__content {
+              width: 100%;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                margin-bottom: 24px;
+              }
+              &-text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+              &-imgCont {
+                border-radius: 20px;
+                width: 100%;
+                margin: 46px 0px;
+                &-img {
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+            .activeIngredient {
+              color: white;
+              background-color: #000;
+            }
+
+            .activeText {
+              text-decoration-line: line-through;
+              color: rgba(0, 0, 0, 0.6);
+              opacity: 0.2;
+            }
+          }
+        }
+      }
+    }
+    .suggestRecipeCont {
+      height: auto;
+      width: 100%;
+
+      .otherRecipe {
+        width: 100%;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__mainTitle {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 1.1;
+          letter-spacing: -0.04em;
+          margin-bottom: 32px;
+        }
+        &__contentCont {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 50px;
+          width: 100%;
+          .suggestRecipe {
+            width: 100%;
+            display: flex;
+            height: 90px;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            &__imgCont {
+              height: 100%;
+              min-width: 100px;
+              &-img {
+                height: 100%;
+                width: 100%;
+              }
+            }
+            &__titleCont {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              width: 196px;
+              &-mainTitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.2;
+
+                letter-spacing: -0.04em;
+              }
+              &-subTitle {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                color: rgba(0, 0, 0, 0.6);
+              }
+            }
+          }
+        }
+      }
+      &__suggestBanner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

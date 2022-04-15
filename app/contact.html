@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Foodieland</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- endbuild -->
+    <!-- build:js scripts/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navMenu">
+        <div class="navMenu__inner">
+          <a href="index.html" class="navMenu__logoCont">
+            <img src="./images/header/logo.png" alt="" />
+          </a>
+          <ul class="navMenuContent">
+            <a href="index.html"
+              ><li class="navMenuContent__option">Home</li></a
+            >
+            <a href="recipes.html"
+              ><li class="navMenuContent__option">Recipes</li></a
+            >
+            <a href="blog.html"><li class="navMenuContent__option">Blog</li></a>
+            <a href="contact.html"
+              ><li class="navMenuContent__option">Contact</li></a
+            >
+            <a href="blogPost.html"
+              ><li class="navMenuContent__option">About us</li></a
+            >
+          </ul>
+          <div class="navMenu__socialMedia">
+            <div class="navMenu__socialMedia-title">Contact Us</div>
+            <div class="navMenu__socialMedia-iconCont">
+              <i
+                class="fa-brands fa-facebook-f navMenu__socialMedia-iconCont"
+              ></i>
+              <i class="fa-brands fa-twitter navMenu__socialMedia-iconCont"></i>
+              <i
+                class="fa-brands fa-instagram navMenu__socialMedia-iconCont"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__inner">
+          <a href="index.html" class="header__logo">
+            <img
+              src="./images/header/logo.png"
+              alt=""
+              class="header__logo-img"
+            />
+          </a>
+          <ul class="header__menu">
+            <a href="index.html"><li class="header__menu-option">Home</li></a>
+            <a href="recipes.html"
+              ><li class="header__menu-option">Recipes</li></a
+            >
+            <a href="blog.html"><li class="header__menu-option">Blog</li></a>
+            <a href="contact.html"
+              ><li class="header__menu-option">Contact</li></a
+            >
+            <a href="blogPost.html"
+              ><li class="header__menu-option">About us</li></a
+            >
+          </ul>
+          <div class="header__socialMedia">
+            <i class="fa-brands fa-facebook-f header__socialMedia-option"></i>
+            <i class="fa-brands fa-twitter header__socialMedia-option"></i>
+            <i class="fa-brands fa-instagram header__socialMedia-option"></i>
+          </div>
+          <div class="header__navMenu">
+            <i class="fa-solid fa-bars header__navMenu-icon"></i>
+          </div>
+        </div>
+      </header>
+      <section class="contact">
+        <div class="contact__inner">
+          <div class="contact__mainTitle">Contact us</div>
+          <div class="contact__form">
+            <div class="contactImgCont">
+              <img
+                src="./images/contact/img1.png"
+                alt=""
+                class="contactImgCont-img"
+              />
+            </div>
+            <div class="contactForm">
+              <div class="contactForm__option">
+                <div class="contactForm__option-title">NAME</div>
+                <input
+                  type="text"
+                  class="contactForm__option-input"
+                  placeholder="Enter your name..."
+                />
+              </div>
+              <div class="contactForm__option">
+                <div class="contactForm__option-title">EMAIL ADDRESS</div>
+                <input
+                  type="text"
+                  class="contactForm__option-input"
+                  placeholder="Your email address.."
+                />
+              </div>
+              <div class="contactForm__option">
+                <div class="contactForm__option-title">SUBJECT</div>
+                <input
+                  type="text"
+                  class="contactForm__option-input"
+                  placeholder="Enter subject..."
+                />
+              </div>
+              <div class="contactForm__option">
+                <div class="contactForm__option-title">ENQUIRY TYPE</div>
+
+                <div class="contactForm__option-input selectOption">
+                  <div
+                    class="contactForm__option-input-value selectOption__value"
+                  >
+                    Advertising
+                  </div>
+                  <i class="fa-solid fa-arrow-down"></i>
+                  <div class="selectMenu">
+                    <div class="selectMenu__option">Complain</div>
+                    <div class="selectMenu__option">Discount</div>
+                    <div class="selectMenu__option">Co-op</div>
+                    <div class="selectMenu__option">Rating</div>
+                  </div>
+                </div>
+              </div>
+              <div class="contactForm__specialOption">
+                <div class="contactForm__specialOption-title">MESSAGES</div>
+                <textarea
+                  class="contactForm__specialOption-input"
+                  placeholder="Enter your text"
+                ></textarea>
+              </div>
+              <div class="contactForm__btnSubmit">Submit</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe" style="padding: 160px 0px 0px 0px">
+        <div class="subscribe__inner">
+          <div class="subscribe__imgCont">
+            <img
+              src="./images/subscribe/img1.png"
+              alt=""
+              class="subscribe__imgCont-img"
+            />
+          </div>
+          <div class="subscribe__contentCont">
+            <div class="subscribe__contentCont-mainTitle">
+              Deliciousness to your inbox
+            </div>
+            <div class="subscribe__contentCont-subTitle">
+              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+              minim
+            </div>
+            <div class="subscribeForm">
+              <input
+                type="text"
+                class="subscribeForm__input"
+                placeholder="Your email address..."
+              />
+              <div class="subscribeForm__btn">Subscribe</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="suggest">
+        <div class="suggest__inner">
+          <div class="suggest__titleCont">
+            <div
+              class="suggest__titleCont-mainTitle"
+              style="width: 100%; text-align: center"
+            >
+              Check out the delicious recipe
+            </div>
+          </div>
+          <div class="suggest__contentCont">
+            <div class="suggestRecipe">
+              <a href="recipes.html" class="suggestRecipe__imgCont">
+                <img
+                  src="./images/suggest/img1.png"
+                  alt=""
+                  class="suggestRecipe__imgCont-img"
+                />
+                <div class="suggestRecipe__heartIcon heartCont">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              </a>
+              <a href="recipes.html" class="suggestRecipe__mainTitle">
+                Mixed Tropical Fruit Salad with Superfood Boosts
+              </a>
+              <div class="suggestRecipe__info">
+                <div class="suggestRecipe__timeCont">
+                  <i
+                    class="fa-solid fa-stopwatch suggestRecipe__timeCont-icon"
+                  ></i>
+                  <div class="suggestRecipe__timeCont-title">30 minutes</div>
+                </div>
+                <div class="suggestRecipe__categoryCont">
+                  <i
+                    class="fa-solid fa-utensils suggestRecipe__categoryCont-icon"
+                  ></i>
+                  <div class="suggestRecipe__categoryCont-title">Healthy</div>
+                </div>
+              </div>
+            </div>
+            <div class="suggestRecipe">
+              <a href="recipes.html" class="suggestRecipe__imgCont">
+                <img
+                  src="./images/suggest/img2.png"
+                  alt=""
+                  class="suggestRecipe__imgCont-img"
+                />
+                <div class="suggestRecipe__heartIcon heartCont">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              </a>
+              <a href="recipes.html" class="suggestRecipe__mainTitle">
+                Mixed Tropical Fruit Salad with Superfood Boosts
+              </a>
+              <div class="suggestRecipe__info">
+                <div class="suggestRecipe__timeCont">
+                  <i
+                    class="fa-solid fa-stopwatch suggestRecipe__timeCont-icon"
+                  ></i>
+                  <div class="suggestRecipe__timeCont-title">30 minutes</div>
+                </div>
+                <div class="suggestRecipe__categoryCont">
+                  <i
+                    class="fa-solid fa-utensils suggestRecipe__categoryCont-icon"
+                  ></i>
+                  <div class="suggestRecipe__categoryCont-title">Healthy</div>
+                </div>
+              </div>
+            </div>
+            <div class="suggestRecipe">
+              <a href="recipes.html" class="suggestRecipe__imgCont">
+                <img
+                  src="./images/suggest/img3.png"
+                  alt=""
+                  class="suggestRecipe__imgCont-img"
+                />
+                <div class="suggestRecipe__heartIcon heartCont">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              </a>
+              <a href="recipes.html" class="suggestRecipe__mainTitle">
+                Mixed Tropical Fruit Salad with Superfood Boosts
+              </a>
+              <div class="suggestRecipe__info">
+                <div class="suggestRecipe__timeCont">
+                  <i
+                    class="fa-solid fa-stopwatch suggestRecipe__timeCont-icon"
+                  ></i>
+                  <div class="suggestRecipe__timeCont-title">30 minutes</div>
+                </div>
+                <div class="suggestRecipe__categoryCont">
+                  <i
+                    class="fa-solid fa-utensils suggestRecipe__categoryCont-icon"
+                  ></i>
+                  <div class="suggestRecipe__categoryCont-title">Healthy</div>
+                </div>
+              </div>
+            </div>
+            <div class="suggestRecipe">
+              <a href="recipes.html" class="suggestRecipe__imgCont">
+                <img
+                  src="./images/suggest/img4.png"
+                  alt=""
+                  class="suggestRecipe__imgCont-img"
+                />
+                <div class="suggestRecipe__heartIcon heartCont">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              </a>
+              <div class="suggestRecipe__mainTitle">
+                Mixed Tropical Fruit Salad with Superfood Boosts
+              </div>
+              <div class="suggestRecipe__info">
+                <div class="suggestRecipe__timeCont">
+                  <i
+                    class="fa-solid fa-stopwatch suggestRecipe__timeCont-icon"
+                  ></i>
+                  <div class="suggestRecipe__timeCont-title">30 minutes</div>
+                </div>
+                <div class="suggestRecipe__categoryCont">
+                  <i
+                    class="fa-solid fa-utensils suggestRecipe__categoryCont-icon"
+                  ></i>
+                  <div class="suggestRecipe__categoryCont-title">Healthy</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__menuCont">
+            <div class="footerLogo">
+              <div class="footerLogo__logoCont">
+                <img
+                  src="./images/footer/img1.png"
+                  alt=""
+                  class="footerLogo__logoCont-img"
+                />
+              </div>
+              <div class="footerLogo__subTitle">
+                Lorem ipsum dolor sit amet, consectetuipisicing elit,
+              </div>
+            </div>
+            <ul class="footerMenu">
+              <a href="recipes.html"
+                ><li class="footerMenu__option">Recipes</li></a
+              >
+              <a href="blog.html"><li class="footerMenu__option">Blog</li></a>
+              <a href="contact.html"
+                ><li class="footerMenu__option">Contact</li></a
+              >
+              <a href="blogPost.html"
+                ><li class="footerMenu__option">About us</li></a
+              >
+            </ul>
+          </div>
+          <div class="footer__socialMedia">
+            <div class="footer__socialMedia-title">
+              © 2020 Flowbase. Powered by
+              <span class="footer__socialMedia-title-special">Webflow</span>
+            </div>
+            <div class="footerMedia">
+              <i class="fa-brands fa-facebook-f footerMedia-option"></i>
+              <i class="fa-brands fa-twitter footerMedia-option"></i>
+              <i class="fa-brands fa-instagram footerMedia-option"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] ||
+          (b[l] = function () {
+            (b[l].q = b[l].q || []).push(arguments);
+          });
+        b[l].l = +new Date();
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = "https://www.google-analytics.com/analytics.js";
+        r.parentNode.insertBefore(e, r);
+      })(window, document, "script", "ga");
+      ga("create", "UA-XXXXX-X");
+      ga("send", "pageview");
+    </script>
+    <!-- build:js scripts/vendor.js -->
+    <script
+      type="text/javascript"
+      src="/node_modules/jquery/dist/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

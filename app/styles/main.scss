@@ -1,0 +1,30 @@
+@import "reset.css";
+@import "variable.scss";
+@import "global.scss";
+
+//Homepage
+
+@import "./Home/header.scss";
+@import "./Home/banner.scss";
+@import "./Home/categories.scss";
+@import "./Home/recipes.scss";
+@import "./Home/education.scss";
+@import "./Home/instagram.scss";
+@import "./Home/suggest.scss";
+@import "./Home/subscribe.scss";
+@import "./Home/footer.scss";
+@import "./Home/navMenu.scss";
+
+//Recipespage
+@import "./Recipes/detail.scss";
+@import "./Recipes/ingredients.scss";
+
+//Contactpage
+
+@import "./Contact/contact.scss";
+
+//Blogpage
+@import "./Blog/blog.scss";
+
+//BlogPostpage
+@import "./BlogPost/blogPost.scss";

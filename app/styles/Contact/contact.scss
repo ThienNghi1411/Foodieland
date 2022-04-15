@@ -1,0 +1,575 @@
+.contact {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 80px;
+
+  &__inner {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &__mainTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 40px;
+    .contactImgFont {
+      width: 400px;
+      &-img {
+        width: 100%;
+      }
+    }
+    .contactForm {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 100%;
+      gap: 24px;
+      &__option {
+        width: 400px;
+        height: 92px;
+        &-title {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 1.2;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 0.6);
+          margin-bottom: 12px;
+        }
+        &-input {
+          width: 100%;
+          padding: 18px 20px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 16px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.2;
+
+          letter-spacing: -0.02em;
+          color: rgba(0, 0, 0, 0.6);
+        }
+        .selectOption {
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          cursor: pointer;
+        }
+        .selectMenu {
+          display: none;
+          position: absolute;
+          width: 100%;
+          padding: 15px 0px;
+          border: 1px solid #000;
+          top: 100%;
+          left: 0;
+          background-color: #ffffff;
+          z-index: 2;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 16px;
+          cursor: pointer;
+          &__option {
+            padding: 12px;
+            width: 100%;
+            &:hover {
+              background-color: #e7f9fd;
+            }
+          }
+        }
+      }
+      &__specialOption {
+        width: 100%;
+        height: 100%;
+        &-title {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 1.2;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 0.6);
+          margin-bottom: 12px;
+        }
+        &-input {
+          width: 100%;
+          height: 200px;
+          padding: 18px 20px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 16px;
+          resize: none;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      &__btnSubmit {
+        background: #000000;
+        border-radius: 16px;
+        padding: 20px 63px;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .contact {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 80px;
+
+    &__inner {
+      max-width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+    &__mainTitle {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    &__form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap: 40px;
+      .contactImgCont {
+        min-width: 300px;
+        &-img {
+          width: 100%;
+          height: 360px;
+        }
+      }
+      .contactForm {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+        gap: 24px;
+        &__option {
+          width: 47%;
+          height: 92px;
+          &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 12px;
+          }
+          &-input {
+            width: 100%;
+            padding: 18px 20px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.2;
+
+            letter-spacing: -0.02em;
+            color: rgba(0, 0, 0, 0.6);
+          }
+          .selectOption {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            cursor: pointer;
+          }
+          .selectMenu {
+            display: none;
+            position: absolute;
+            width: 100%;
+            padding: 15px 0px;
+            border: 1px solid #000;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            z-index: 2;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            cursor: pointer;
+            &__option {
+              padding: 12px;
+              width: 100%;
+              &:hover {
+                background-color: #e7f9fd;
+              }
+            }
+          }
+        }
+        &__specialOption {
+          width: 100%;
+          height: 100%;
+          &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 12px;
+          }
+          &-input {
+            width: 100%;
+            height: 200px;
+            padding: 18px 20px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            resize: none;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        &__btnSubmit {
+          background: #000000;
+          border-radius: 16px;
+          padding: 20px 63px;
+          color: white;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 1.2;
+          letter-spacing: -0.02em;
+          transition: all 0.2s linear;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 80px;
+
+    &__inner {
+      max-width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+    &__mainTitle {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    &__form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      .contactImgCont {
+        min-width: 400px;
+        height: 472px;
+        margin-bottom: 40px;
+        &-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .contactForm {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+        gap: 24px;
+        &__option {
+          width: 47%;
+          height: 92px;
+          &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 12px;
+          }
+          &-input {
+            width: 100%;
+            padding: 18px 20px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.2;
+
+            letter-spacing: -0.02em;
+            color: rgba(0, 0, 0, 0.6);
+          }
+          .selectOption {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            cursor: pointer;
+          }
+          .selectMenu {
+            display: none;
+            position: absolute;
+            width: 100%;
+            padding: 15px 0px;
+            border: 1px solid #000;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            z-index: 2;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            cursor: pointer;
+            &__option {
+              padding: 12px;
+              width: 100%;
+              &:hover {
+                background-color: #e7f9fd;
+              }
+            }
+          }
+        }
+        &__specialOption {
+          width: 100%;
+          height: 100%;
+          &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 12px;
+          }
+          &-input {
+            width: 100%;
+            height: 200px;
+            padding: 18px 20px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            resize: none;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        &__btnSubmit {
+          background: #000000;
+          border-radius: 16px;
+          padding: 20px 63px;
+          color: white;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 1.2;
+          letter-spacing: -0.02em;
+          transition: all 0.2s linear;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 80px;
+
+    &__inner {
+      max-width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+    &__mainTitle {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    &__form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      .contactImgCont {
+        min-width: 300px;
+        height: 360px;
+        margin-bottom: 40px;
+        &-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .contactForm {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+        gap: 24px;
+        &__option {
+          width: 100%;
+          height: 92px;
+          &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 12px;
+          }
+          &-input {
+            width: 100%;
+            padding: 18px 20px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.2;
+
+            letter-spacing: -0.02em;
+            color: rgba(0, 0, 0, 0.6);
+          }
+          .selectOption {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            cursor: pointer;
+          }
+          .selectMenu {
+            display: none;
+            position: absolute;
+            width: 100%;
+            padding: 15px 0px;
+            border: 1px solid #000;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            z-index: 2;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            cursor: pointer;
+            &__option {
+              padding: 12px;
+              width: 100%;
+              &:hover {
+                background-color: #e7f9fd;
+              }
+            }
+          }
+        }
+        &__specialOption {
+          width: 100%;
+          height: 100%;
+          &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 12px;
+          }
+          &-input {
+            width: 100%;
+            height: 200px;
+            padding: 18px 20px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            resize: none;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        &__btnSubmit {
+          background: #000000;
+          border-radius: 16px;
+          padding: 20px 63px;
+          color: white;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 1.2;
+          letter-spacing: -0.02em;
+          transition: all 0.2s linear;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}

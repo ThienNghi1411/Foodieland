@@ -1,0 +1,227 @@
+.header {
+  width: 100%;
+  max-height: 110px;
+  margin: 0 auto;
+
+  &__inner {
+    max-width: 1280px;
+    padding: 40px 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &__logo {
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 0;
+    &-option {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 1.1;
+      transition: all 0.2s linear;
+      cursor: pointer;
+      &:hover {
+        font-weight: bold;
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__socialMedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    font-size: 1.6rem;
+    transition: all 0.2s linear;
+
+    &-option {
+      cursor: pointer;
+      &:hover {
+        font-weight: bold;
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__navMenu {
+    font-size: 30px;
+    display: none;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 2222;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    width: 100%;
+    max-height: 110px;
+    margin: 0 auto;
+
+    &__inner {
+      margin: 0 auto;
+      width: 80%;
+      padding: 40px 0px;
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &__logo {
+    }
+    &__menu {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 0;
+      &-option {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.1;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+          transform: scale(1.1);
+        }
+      }
+    }
+    &__socialMedia {
+      display: flex;
+      justify-content: flex-end;
+      gap: 40px;
+      font-size: 1.6rem;
+      transition: all 0.2s linear;
+
+      &-option {
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    width: 100%;
+    max-height: 110px;
+    margin: 0 auto;
+
+    &__inner {
+      width: 90%;
+      margin: 0 auto;
+      padding: 40px 0px;
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &__logo {
+    }
+    &__menu {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+      &-option {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.1;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+          transform: scale(1.1);
+        }
+      }
+    }
+    &__socialMedia {
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      font-size: 1.6rem;
+      transition: all 0.2s linear;
+
+      &-option {
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    max-height: 110px;
+    margin: 0 auto;
+
+    &__inner {
+      width: 90%;
+      margin: 0 auto;
+      padding: 40px 0px;
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &__logo {
+    }
+    &__menu {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+      display: none;
+      &-option {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.1;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+          transform: scale(1.1);
+        }
+      }
+    }
+    &__socialMedia {
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      font-size: 1.6rem;
+      transition: all 0.2s linear;
+      display: none;
+      &-option {
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+          transform: scale(1.1);
+        }
+      }
+    }
+    &__navMenu {
+      display: block;
+      font-size: 30px;
+    }
+  }
+}
